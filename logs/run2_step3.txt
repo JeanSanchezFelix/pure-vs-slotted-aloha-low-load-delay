@@ -1,0 +1,845 @@
+17:20:54> ALE_Alice: loop_Tx starting
+17:20:54> ALE_Alice: loop_Rx starting
+17:20:54> DLE_Alice: loop_Tx starting
+17:20:54> DLE_Alice: loop_Rx starting
+17:20:54> PLE_Alice: loop_Tx starting
+17:20:54> PLE_Alice: loop_Rx starting
+17:20:54> ALE_Bob: loop_Tx starting
+17:20:54> ALE_Bob: loop_Rx starting
+17:20:54> DLE_Bob: loop_Tx starting
+17:20:54> DLE_Bob: loop_Rx starting
+17:20:54> PLE_Bob: loop_Tx starting
+17:20:54> PLE_Bob: loop_Rx starting
+17:20:54> DLE_Alice: loop_FSM starting
+17:20:54> DLE_Bob: loop_FSM starting
+17:20:54> DLE_Alice: loop_Timer starting
+17:20:54> DLE_Bob: loop_Timer starting
+17:21:12> ALE_Alice Tx: message 1: Alice to Bob0
+17:21:12> ALE_Alice Tx: message 2: Alice to Bob1
+17:21:12> ALE_Alice Tx: message 3: Alice to Bob2
+17:21:12> ALE_Alice Tx: message 4: Alice to Bob3
+17:21:12> ALE_Alice Tx: message 5: Alice to Bob4
+17:21:12> ALE_Alice Tx: message 6: Alice to Bob5
+17:21:12> ALE_Alice Tx: message 7: Alice to Bob6
+17:21:12> ALE_Alice Tx: message 8: Alice to Bob7
+17:21:12> ALE_Alice Tx: message 9: Alice to Bob8
+17:21:12> ALE_Alice Tx: message 10: Alice to Bob9
+17:21:12> ALE_Alice Tx: message 11: Alice to Bob10
+17:21:12> ALE_Alice Tx: message 12: Alice to Bob11
+17:21:12> ALE_Alice Tx: message 13: Alice to Bob12
+17:21:12> ALE_Alice Tx: message 14: Alice to Bob13
+17:21:12> ALE_Alice Tx: message 15: Alice to Bob14
+17:21:12> ALE_Alice Tx: message 16: Alice to Bob15
+17:21:12> ALE_Alice Tx: message 17: Alice to Bob16
+17:21:12> ALE_Alice Tx: message 18: Alice to Bob17
+17:21:12> ALE_Alice Tx: message 19: Alice to Bob18
+17:21:12> ALE_Alice Tx: message 20: Alice to Bob19
+17:21:12> DLE_Alice Tx: message 1: Alice to Bob0
+17:21:12> DLE_Alice FSM: state: 0 event type: 0
+17:21:12> DLE_Alice FSM: to send: Alice to Bob0
+17:21:12> PLE_Alice Tx: message: 00Alice to Bob0
+17:21:12> PLE_Alice Tx: packet loss
+17:21:17> DLE_Alice FSM: state: 1 event type: 3
+17:21:17> DLE_Alice FSM: to resend frame 0 Alice to Bob0
+17:21:17> PLE_Alice Tx: message: 00Alice to Bob0
+17:21:18> PLE_Bob Rx: from ('127.0.0.1', 30000) after 0.66 s: 00Alice to Bob0
+17:21:18> DLE_Bob Rx: message 1: 00Alice to Bob0
+17:21:18> DLE_Bob FSM: state: 0 event type: 1
+17:21:18> DLE_Bob FSM: received: Alice to Bob0
+17:21:18> PLE_Bob Tx: message: 10
+17:21:18> ALE_Bob Rx: message 1: Alice to Bob0
+17:21:18> PLE_Alice Rx: from ('127.0.0.1', 31111) after 0.58 s: 10
+17:21:18> DLE_Alice Rx: message 1: 10
+17:21:18> DLE_Alice FSM: state: 1 event type: 2
+17:21:18> DLE_Alice Tx: message 2: Alice to Bob1
+17:21:18> DLE_Alice FSM: state: 0 event type: 0
+17:21:18> DLE_Alice FSM: to send: Alice to Bob1
+17:21:18> PLE_Alice Tx: message: 01Alice to Bob1
+17:21:18> PLE_Alice Tx: packet duplicated
+17:21:21> PLE_Bob Rx: from ('127.0.0.1', 30000) after 2.25 s: 01Alice to Bob1
+17:21:21> DLE_Bob Rx: message 2: 01Alice to Bob1
+17:21:21> DLE_Bob FSM: state: 0 event type: 1
+17:21:21> DLE_Bob FSM: received: Alice to Bob1
+17:21:21> ALE_Bob Rx: message 2: Alice to Bob1
+17:21:21> PLE_Bob Tx: message: 11
+17:21:21> PLE_Bob Tx: packet duplicated
+17:21:21> PLE_Bob Rx: from ('127.0.0.1', 30000) after 2.71 s: 01Alice to Bob1
+17:21:21> DLE_Bob Rx: message 3: 01Alice to Bob1
+17:21:21> DLE_Bob FSM: state: 0 event type: 1
+17:21:21> DLE_Bob FSM: received: Alice to Bob1
+17:21:21> DLE_Bob FSM: received frame 1 but expected 2
+17:21:21> PLE_Bob Tx: message: 11
+17:21:21> PLE_Alice Rx: from ('127.0.0.1', 31111) after 0.83 s: 11
+17:21:21> DLE_Alice Rx: message 2: 11
+17:21:21> DLE_Alice FSM: state: 1 event type: 2
+17:21:21> DLE_Alice Tx: message 3: Alice to Bob2
+17:21:21> DLE_Alice FSM: state: 0 event type: 0
+17:21:21> DLE_Alice FSM: to send: Alice to Bob2
+17:21:21> PLE_Alice Tx: message: 02Alice to Bob2
+17:21:21> PLE_Alice Tx: packet loss
+17:21:22> PLE_Alice Rx: from ('127.0.0.1', 31111) after 1.00 s: 11
+17:21:22> DLE_Alice Rx: message 3: 11
+17:21:22> DLE_Alice FSM: state: 1 event type: 2
+17:21:22> ACK # 1 does not match local seq # 2
+17:21:22> PLE_Alice Rx: from ('127.0.0.1', 31111) after 1.67 s: 11
+17:21:22> DLE_Alice Rx: message 4: 11
+17:21:22> DLE_Alice FSM: state: 1 event type: 2
+17:21:22> ACK # 1 does not match local seq # 2
+17:21:27> DLE_Alice FSM: state: 1 event type: 3
+17:21:27> DLE_Alice FSM: to resend frame 2 Alice to Bob2
+17:21:27> PLE_Alice Tx: message: 02Alice to Bob2
+17:21:27> PLE_Alice Tx: packet loss
+17:21:33> DLE_Alice FSM: state: 1 event type: 3
+17:21:33> DLE_Alice FSM: to resend frame 2 Alice to Bob2
+17:21:33> PLE_Alice Tx: message: 02Alice to Bob2
+17:21:36> PLE_Bob Rx: from ('127.0.0.1', 30000) after 3.00 s: 02Alice to Bob2
+17:21:36> DLE_Bob Rx: message 4: 02Alice to Bob2
+17:21:36> DLE_Bob FSM: state: 0 event type: 1
+17:21:36> DLE_Bob FSM: received: Alice to Bob2
+17:21:36> PLE_Bob Tx: message: 12
+17:21:36> ALE_Bob Rx: message 3: Alice to Bob2
+17:21:38> PLE_Alice Rx: from ('127.0.0.1', 31111) after 1.91 s: 12
+17:21:38> DLE_Alice Rx: message 5: 12
+17:21:38> DLE_Alice FSM: state: 1 event type: 2
+17:21:38> DLE_Alice Tx: message 4: Alice to Bob3
+17:21:38> DLE_Alice FSM: state: 0 event type: 0
+17:21:38> DLE_Alice FSM: to send: Alice to Bob3
+17:21:38> PLE_Alice Tx: message: 03Alice to Bob3
+17:21:38> PLE_Bob Rx: from ('127.0.0.1', 30000) after 0.87 s: 03Alice to Bob3
+17:21:38> DLE_Bob Rx: message 5: 03Alice to Bob3
+17:21:38> DLE_Bob FSM: state: 0 event type: 1
+17:21:38> DLE_Bob FSM: received: Alice to Bob3
+17:21:38> PLE_Bob Tx: message: 13
+17:21:38> ALE_Bob Rx: message 4: Alice to Bob3
+17:21:39> PLE_Alice Rx: from ('127.0.0.1', 31111) after 0.11 s: 13
+17:21:39> DLE_Alice Rx: message 6: 13
+17:21:39> DLE_Alice FSM: state: 1 event type: 2
+17:21:39> DLE_Alice Tx: message 5: Alice to Bob4
+17:21:39> DLE_Alice FSM: state: 0 event type: 0
+17:21:39> DLE_Alice FSM: to send: Alice to Bob4
+17:21:39> PLE_Alice Tx: message: 04Alice to Bob4
+17:21:39> PLE_Alice Tx: packet loss
+17:21:44> DLE_Alice FSM: state: 1 event type: 3
+17:21:44> DLE_Alice FSM: to resend frame 4 Alice to Bob4
+17:21:44> PLE_Alice Tx: message: 04Alice to Bob4
+17:21:47> PLE_Bob Rx: from ('127.0.0.1', 30000) after 2.67 s: 04Alice to Bob4
+17:21:47> DLE_Bob Rx: message 6: 04Alice to Bob4
+17:21:47> DLE_Bob FSM: state: 0 event type: 1
+17:21:47> DLE_Bob FSM: received: Alice to Bob4
+17:21:47> ALE_Bob Rx: message 5: Alice to Bob4
+17:21:47> PLE_Bob Tx: message: 14
+17:21:48> PLE_Alice Rx: from ('127.0.0.1', 31111) after 1.13 s: 14
+17:21:48> DLE_Alice Rx: message 7: 14
+17:21:48> DLE_Alice FSM: state: 1 event type: 2
+17:21:48> DLE_Alice Tx: message 6: Alice to Bob5
+17:21:48> DLE_Alice FSM: state: 0 event type: 0
+17:21:48> DLE_Alice FSM: to send: Alice to Bob5
+17:21:48> PLE_Alice Tx: message: 05Alice to Bob5
+17:21:51> PLE_Bob Rx: from ('127.0.0.1', 30000) after 2.90 s: 05Alice to Bob5
+17:21:51> DLE_Bob Rx: message 7: 05Alice to Bob5
+17:21:51> DLE_Bob FSM: state: 0 event type: 1
+17:21:51> DLE_Bob FSM: received: Alice to Bob5
+17:21:51> PLE_Bob Tx: message: 15
+17:21:51> ALE_Bob Rx: message 6: Alice to Bob5
+17:21:51> PLE_Bob Tx: packet duplicated
+17:21:52> PLE_Alice Rx: from ('127.0.0.1', 31111) after 0.79 s: 15
+17:21:52> DLE_Alice Rx: message 8: 15
+17:21:52> DLE_Alice FSM: state: 1 event type: 2
+17:21:52> DLE_Alice Tx: message 7: Alice to Bob6
+17:21:52> DLE_Alice FSM: state: 0 event type: 0
+17:21:52> DLE_Alice FSM: to send: Alice to Bob6
+17:21:52> PLE_Alice Tx: message: 06Alice to Bob6
+17:21:52> PLE_Bob Rx: from ('127.0.0.1', 30000) after 0.55 s: 06Alice to Bob6
+17:21:52> DLE_Bob Rx: message 8: 06Alice to Bob6
+17:21:52> DLE_Bob FSM: state: 0 event type: 1
+17:21:52> DLE_Bob FSM: received: Alice to Bob6
+17:21:52> ALE_Bob Rx: message 7: Alice to Bob6
+17:21:52> PLE_Bob Tx: message: 16
+17:21:52> PLE_Bob Tx: packet duplicated
+17:21:53> PLE_Alice Rx: from ('127.0.0.1', 31111) after 1.67 s: 15
+17:21:53> DLE_Alice Rx: message 9: 15
+17:21:53> DLE_Alice FSM: state: 1 event type: 2
+17:21:53> ACK # 5 does not match local seq # 6
+17:21:54> PLE_Alice Rx: from ('127.0.0.1', 31111) after 1.24 s: 16
+17:21:54> DLE_Alice Rx: message 10: 16
+17:21:54> DLE_Alice FSM: state: 1 event type: 2
+17:21:54> DLE_Alice Tx: message 8: Alice to Bob7
+17:21:54> DLE_Alice FSM: state: 0 event type: 0
+17:21:54> DLE_Alice FSM: to send: Alice to Bob7
+17:21:54> PLE_Alice Tx: message: 07Alice to Bob7
+17:21:54> PLE_Alice Tx: packet loss
+17:21:55> PLE_Alice Rx: from ('127.0.0.1', 31111) after 2.62 s: 16
+17:21:55> DLE_Alice Rx: message 11: 16
+17:21:55> DLE_Alice FSM: state: 1 event type: 2
+17:21:55> ACK # 6 does not match local seq # 7
+17:21:59> DLE_Alice FSM: state: 1 event type: 3
+17:21:59> DLE_Alice FSM: to resend frame 7 Alice to Bob7
+17:21:59> PLE_Alice Tx: message: 07Alice to Bob7
+17:22:00> PLE_Bob Rx: from ('127.0.0.1', 30000) after 0.93 s: 07Alice to Bob7
+17:22:00> DLE_Bob Rx: message 9: 07Alice to Bob7
+17:22:00> DLE_Bob FSM: state: 0 event type: 1
+17:22:00> DLE_Bob FSM: received: Alice to Bob7
+17:22:00> ALE_Bob Rx: message 8: Alice to Bob7
+17:22:00> PLE_Bob Tx: message: 17
+17:22:01> PLE_Alice Rx: from ('127.0.0.1', 31111) after 0.86 s: 17
+17:22:01> DLE_Alice Rx: message 12: 17
+17:22:01> DLE_Alice FSM: state: 1 event type: 2
+17:22:01> DLE_Alice Tx: message 9: Alice to Bob8
+17:22:01> DLE_Alice FSM: state: 0 event type: 0
+17:22:01> DLE_Alice FSM: to send: Alice to Bob8
+17:22:01> PLE_Alice Tx: message: 08Alice to Bob8
+17:22:02> PLE_Bob Rx: from ('127.0.0.1', 30000) after 1.36 s: 08Alice to Bob8
+17:22:02> DLE_Bob Rx: message 10: 08Alice to Bob8
+17:22:02> DLE_Bob FSM: state: 0 event type: 1
+17:22:02> DLE_Bob FSM: received: Alice to Bob8
+17:22:02> PLE_Bob Tx: message: 18
+17:22:02> PLE_Bob Tx: packet loss
+17:22:02> ALE_Bob Rx: message 9: Alice to Bob8
+17:22:07> DLE_Alice FSM: state: 1 event type: 3
+17:22:07> DLE_Alice FSM: to resend frame 8 Alice to Bob8
+17:22:07> PLE_Alice Tx: message: 08Alice to Bob8
+17:22:07> PLE_Alice Tx: packet duplicated
+17:22:07> PLE_Bob Rx: from ('127.0.0.1', 30000) after 0.06 s: 08Alice to Bob8
+17:22:07> DLE_Bob Rx: message 11: 08Alice to Bob8
+17:22:07> DLE_Bob FSM: state: 0 event type: 1
+17:22:07> DLE_Bob FSM: received: Alice to Bob8
+17:22:07> DLE_Bob FSM: received frame 8 but expected 9
+17:22:07> PLE_Bob Tx: message: 18
+17:22:08> PLE_Bob Rx: from ('127.0.0.1', 30000) after 0.87 s: 08Alice to Bob8
+17:22:08> DLE_Bob Rx: message 12: 08Alice to Bob8
+17:22:08> DLE_Bob FSM: state: 0 event type: 1
+17:22:08> DLE_Bob FSM: received: Alice to Bob8
+17:22:08> DLE_Bob FSM: received frame 8 but expected 9
+17:22:08> PLE_Bob Tx: message: 18
+17:22:08> PLE_Bob Tx: packet loss
+17:22:09> PLE_Alice Rx: from ('127.0.0.1', 31111) after 2.63 s: 18
+17:22:09> DLE_Alice Rx: message 13: 18
+17:22:09> DLE_Alice FSM: state: 1 event type: 2
+17:22:09> DLE_Alice Tx: message 10: Alice to Bob9
+17:22:09> DLE_Alice FSM: state: 0 event type: 0
+17:22:09> DLE_Alice FSM: to send: Alice to Bob9
+17:22:09> PLE_Alice Tx: message: 09Alice to Bob9
+17:22:10> PLE_Bob Rx: from ('127.0.0.1', 30000) after 0.13 s: 09Alice to Bob9
+17:22:10> DLE_Bob Rx: message 13: 09Alice to Bob9
+17:22:10> DLE_Bob FSM: state: 0 event type: 1
+17:22:10> DLE_Bob FSM: received: Alice to Bob9
+17:22:10> ALE_Bob Rx: message 10: Alice to Bob9
+17:22:10> PLE_Bob Tx: message: 19
+17:22:12> PLE_Alice Rx: from ('127.0.0.1', 31111) after 2.21 s: 19
+17:22:12> DLE_Alice Rx: message 14: 19
+17:22:12> DLE_Alice FSM: state: 1 event type: 2
+17:22:12> DLE_Alice Tx: message 11: Alice to Bob10
+17:22:12> DLE_Alice FSM: state: 0 event type: 0
+17:22:12> DLE_Alice FSM: to send: Alice to Bob10
+17:22:12> PLE_Alice Tx: message: 00Alice to Bob10
+17:22:13> PLE_Bob Rx: from ('127.0.0.1', 30000) after 1.72 s: 00Alice to Bob10
+17:22:13> DLE_Bob Rx: message 14: 00Alice to Bob10
+17:22:13> DLE_Bob FSM: state: 0 event type: 1
+17:22:13> DLE_Bob FSM: received: Alice to Bob10
+17:22:13> ALE_Bob Rx: message 11: Alice to Bob10
+17:22:13> PLE_Bob Tx: message: 10
+17:22:13> PLE_Bob Tx: packet loss
+17:22:18> DLE_Alice FSM: state: 1 event type: 3
+17:22:18> DLE_Alice FSM: to resend frame 0 Alice to Bob10
+17:22:18> PLE_Alice Tx: message: 00Alice to Bob10
+17:22:20> PLE_Bob Rx: from ('127.0.0.1', 30000) after 1.82 s: 00Alice to Bob10
+17:22:20> DLE_Bob Rx: message 15: 00Alice to Bob10
+17:22:20> DLE_Bob FSM: state: 0 event type: 1
+17:22:20> DLE_Bob FSM: received: Alice to Bob10
+17:22:20> DLE_Bob FSM: received frame 0 but expected 1
+17:22:20> PLE_Bob Tx: message: 10
+17:22:21> PLE_Alice Rx: from ('127.0.0.1', 31111) after 1.61 s: 10
+17:22:21> DLE_Alice Rx: message 15: 10
+17:22:21> DLE_Alice FSM: state: 1 event type: 2
+17:22:21> DLE_Alice Tx: message 12: Alice to Bob11
+17:22:21> DLE_Alice FSM: state: 0 event type: 0
+17:22:21> DLE_Alice FSM: to send: Alice to Bob11
+17:22:21> PLE_Alice Tx: message: 01Alice to Bob11
+17:22:24> PLE_Bob Rx: from ('127.0.0.1', 30000) after 2.44 s: 01Alice to Bob11
+17:22:24> DLE_Bob Rx: message 16: 01Alice to Bob11
+17:22:24> DLE_Bob FSM: state: 0 event type: 1
+17:22:24> DLE_Bob FSM: received: Alice to Bob11
+17:22:24> PLE_Bob Tx: message: 11
+17:22:24> ALE_Bob Rx: message 12: Alice to Bob11
+17:22:26> PLE_Alice Rx: from ('127.0.0.1', 31111) after 2.02 s: 11
+17:22:26> DLE_Alice Rx: message 16: 11
+17:22:26> DLE_Alice FSM: state: 1 event type: 2
+17:22:26> DLE_Alice Tx: message 13: Alice to Bob12
+17:22:26> DLE_Alice FSM: state: 0 event type: 0
+17:22:26> DLE_Alice FSM: to send: Alice to Bob12
+17:22:26> PLE_Alice Tx: message: 02Alice to Bob12
+17:22:27> PLE_Bob Rx: from ('127.0.0.1', 30000) after 1.01 s: 02Alice to Bob12
+17:22:27> DLE_Bob Rx: message 17: 02Alice to Bob12
+17:22:27> DLE_Bob FSM: state: 0 event type: 1
+17:22:27> DLE_Bob FSM: received: Alice to Bob12
+17:22:27> PLE_Bob Tx: message: 12
+17:22:27> ALE_Bob Rx: message 13: Alice to Bob12
+17:22:28> PLE_Alice Rx: from ('127.0.0.1', 31111) after 1.22 s: 12
+17:22:28> DLE_Alice Rx: message 17: 12
+17:22:28> DLE_Alice FSM: state: 1 event type: 2
+17:22:28> DLE_Alice Tx: message 14: Alice to Bob13
+17:22:28> DLE_Alice FSM: state: 0 event type: 0
+17:22:28> DLE_Alice FSM: to send: Alice to Bob13
+17:22:28> PLE_Alice Tx: message: 03Alice to Bob13
+17:22:29> PLE_Bob Rx: from ('127.0.0.1', 30000) after 1.20 s: 03Alice to Bob13
+17:22:29> DLE_Bob Rx: message 18: 03Alice to Bob13
+17:22:29> DLE_Bob FSM: state: 0 event type: 1
+17:22:29> DLE_Bob FSM: received: Alice to Bob13
+17:22:29> PLE_Bob Tx: message: 13
+17:22:29> ALE_Bob Rx: message 14: Alice to Bob13
+17:22:31> PLE_Alice Rx: from ('127.0.0.1', 31111) after 2.36 s: 13
+17:22:31> DLE_Alice Rx: message 18: 13
+17:22:31> DLE_Alice FSM: state: 1 event type: 2
+17:22:31> DLE_Alice Tx: message 15: Alice to Bob14
+17:22:31> DLE_Alice FSM: state: 0 event type: 0
+17:22:31> DLE_Alice FSM: to send: Alice to Bob14
+17:22:31> PLE_Alice Tx: message: 04Alice to Bob14
+17:22:31> PLE_Alice Tx: packet loss
+17:22:37> DLE_Alice FSM: state: 1 event type: 3
+17:22:37> DLE_Alice FSM: to resend frame 4 Alice to Bob14
+17:22:37> PLE_Alice Tx: message: 04Alice to Bob14
+17:22:40> PLE_Bob Rx: from ('127.0.0.1', 30000) after 2.72 s: 04Alice to Bob14
+17:22:40> DLE_Bob Rx: message 19: 04Alice to Bob14
+17:22:40> DLE_Bob FSM: state: 0 event type: 1
+17:22:40> DLE_Bob FSM: received: Alice to Bob14
+17:22:40> PLE_Bob Tx: message: 14
+17:22:40> ALE_Bob Rx: message 15: Alice to Bob14
+17:22:42> PLE_Alice Rx: from ('127.0.0.1', 31111) after 1.72 s: 14
+17:22:42> DLE_Alice Rx: message 19: 14
+17:22:42> DLE_Alice FSM: state: 1 event type: 2
+17:22:42> DLE_Alice Tx: message 16: Alice to Bob15
+17:22:42> DLE_Alice FSM: state: 0 event type: 0
+17:22:42> DLE_Alice FSM: to send: Alice to Bob15
+17:22:42> PLE_Alice Tx: message: 05Alice to Bob15
+17:22:42> PLE_Alice Tx: packet duplicated
+17:22:42> PLE_Bob Rx: from ('127.0.0.1', 30000) after 0.29 s: 05Alice to Bob15
+17:22:42> DLE_Bob Rx: message 20: 05Alice to Bob15
+17:22:42> DLE_Bob FSM: state: 0 event type: 1
+17:22:42> DLE_Bob FSM: received: Alice to Bob15
+17:22:42> PLE_Bob Tx: message: 15
+17:22:42> ALE_Bob Rx: message 16: Alice to Bob15
+17:22:43> PLE_Alice Rx: from ('127.0.0.1', 31111) after 0.79 s: 15
+17:22:43> DLE_Alice Rx: message 20: 15
+17:22:43> DLE_Alice FSM: state: 1 event type: 2
+17:22:43> DLE_Alice Tx: message 17: Alice to Bob16
+17:22:43> DLE_Alice FSM: state: 0 event type: 0
+17:22:43> DLE_Alice FSM: to send: Alice to Bob16
+17:22:43> PLE_Alice Tx: message: 06Alice to Bob16
+17:22:43> PLE_Alice Tx: packet duplicated
+17:22:44> PLE_Bob Rx: from ('127.0.0.1', 30000) after 1.02 s: 06Alice to Bob16
+17:22:44> DLE_Bob Rx: message 21: 06Alice to Bob16
+17:22:44> DLE_Bob FSM: state: 0 event type: 1
+17:22:44> DLE_Bob FSM: received: Alice to Bob16
+17:22:44> PLE_Bob Tx: message: 16
+17:22:44> ALE_Bob Rx: message 17: Alice to Bob16
+17:22:44> PLE_Bob Rx: from ('127.0.0.1', 30000) after 2.33 s: 05Alice to Bob15
+17:22:44> DLE_Bob Rx: message 22: 05Alice to Bob15
+17:22:44> DLE_Bob FSM: state: 0 event type: 1
+17:22:44> DLE_Bob FSM: received: Alice to Bob15
+17:22:44> DLE_Bob FSM: received frame 5 but expected 7
+17:22:44> PLE_Bob Tx: message: 15
+17:22:44> PLE_Alice Rx: from ('127.0.0.1', 31111) after 0.30 s: 15
+17:22:44> DLE_Alice Rx: message 21: 15
+17:22:44> DLE_Alice FSM: state: 1 event type: 2
+17:22:44> ACK # 5 does not match local seq # 6
+17:22:45> PLE_Alice Rx: from ('127.0.0.1', 31111) after 0.94 s: 16
+17:22:45> DLE_Alice Rx: message 22: 16
+17:22:45> DLE_Alice FSM: state: 1 event type: 2
+17:22:45> DLE_Alice Tx: message 18: Alice to Bob17
+17:22:45> DLE_Alice FSM: state: 0 event type: 0
+17:22:45> DLE_Alice FSM: to send: Alice to Bob17
+17:22:45> PLE_Alice Tx: message: 07Alice to Bob17
+17:22:45> PLE_Bob Rx: from ('127.0.0.1', 30000) after 2.08 s: 06Alice to Bob16
+17:22:45> DLE_Bob Rx: message 23: 06Alice to Bob16
+17:22:45> DLE_Bob FSM: state: 0 event type: 1
+17:22:45> DLE_Bob FSM: received: Alice to Bob16
+17:22:45> DLE_Bob FSM: received frame 6 but expected 7
+17:22:45> PLE_Bob Tx: message: 16
+17:22:45> PLE_Bob Tx: packet loss
+17:22:47> PLE_Bob Rx: from ('127.0.0.1', 30000) after 1.94 s: 07Alice to Bob17
+17:22:47> DLE_Bob Rx: message 24: 07Alice to Bob17
+17:22:47> DLE_Bob FSM: state: 0 event type: 1
+17:22:47> DLE_Bob FSM: received: Alice to Bob17
+17:22:47> ALE_Bob Rx: message 18: Alice to Bob17
+17:22:47> PLE_Bob Tx: message: 17
+17:22:47> PLE_Bob Tx: packet duplicated
+17:22:47> PLE_Alice Rx: from ('127.0.0.1', 31111) after 0.75 s: 17
+17:22:47> DLE_Alice Rx: message 23: 17
+17:22:47> DLE_Alice FSM: state: 1 event type: 2
+17:22:47> DLE_Alice Tx: message 19: Alice to Bob18
+17:22:47> DLE_Alice FSM: state: 0 event type: 0
+17:22:47> DLE_Alice FSM: to send: Alice to Bob18
+17:22:47> PLE_Alice Tx: message: 08Alice to Bob18
+17:22:48> PLE_Alice Rx: from ('127.0.0.1', 31111) after 0.97 s: 17
+17:22:48> DLE_Alice Rx: message 24: 17
+17:22:48> DLE_Alice FSM: state: 1 event type: 2
+17:22:48> ACK # 7 does not match local seq # 8
+17:22:49> PLE_Bob Rx: from ('127.0.0.1', 30000) after 1.25 s: 08Alice to Bob18
+17:22:49> DLE_Bob Rx: message 25: 08Alice to Bob18
+17:22:49> DLE_Bob FSM: state: 0 event type: 1
+17:22:49> DLE_Bob FSM: received: Alice to Bob18
+17:22:49> ALE_Bob Rx: message 19: Alice to Bob18
+17:22:49> PLE_Bob Tx: message: 18
+17:22:49> PLE_Bob Tx: packet loss
+17:22:53> DLE_Alice FSM: state: 1 event type: 3
+17:22:53> DLE_Alice FSM: to resend frame 8 Alice to Bob18
+17:22:53> PLE_Alice Tx: message: 08Alice to Bob18
+17:22:54> PLE_Bob Rx: from ('127.0.0.1', 30000) after 1.00 s: 08Alice to Bob18
+17:22:54> DLE_Bob Rx: message 26: 08Alice to Bob18
+17:22:54> DLE_Bob FSM: state: 0 event type: 1
+17:22:54> DLE_Bob FSM: received: Alice to Bob18
+17:22:54> DLE_Bob FSM: received frame 8 but expected 9
+17:22:54> PLE_Bob Tx: message: 18
+17:22:54> PLE_Bob Tx: packet loss
+17:22:59> DLE_Alice FSM: state: 1 event type: 3
+17:22:59> DLE_Alice FSM: to resend frame 8 Alice to Bob18
+17:22:59> PLE_Alice Tx: message: 08Alice to Bob18
+17:23:00> PLE_Bob Rx: from ('127.0.0.1', 30000) after 1.69 s: 08Alice to Bob18
+17:23:00> DLE_Bob Rx: message 27: 08Alice to Bob18
+17:23:00> DLE_Bob FSM: state: 0 event type: 1
+17:23:00> DLE_Bob FSM: received: Alice to Bob18
+17:23:00> DLE_Bob FSM: received frame 8 but expected 9
+17:23:00> PLE_Bob Tx: message: 18
+17:23:00> PLE_Bob Tx: packet duplicated
+17:23:01> PLE_Alice Rx: from ('127.0.0.1', 31111) after 0.75 s: 18
+17:23:01> DLE_Alice Rx: message 25: 18
+17:23:01> DLE_Alice FSM: state: 1 event type: 2
+17:23:01> DLE_Alice Tx: message 20: Alice to Bob19
+17:23:01> DLE_Alice FSM: state: 0 event type: 0
+17:23:01> DLE_Alice FSM: to send: Alice to Bob19
+17:23:01> PLE_Alice Tx: message: 09Alice to Bob19
+17:23:02> PLE_Bob Rx: from ('127.0.0.1', 30000) after 0.42 s: 09Alice to Bob19
+17:23:02> DLE_Bob Rx: message 28: 09Alice to Bob19
+17:23:02> DLE_Bob FSM: state: 0 event type: 1
+17:23:02> DLE_Bob FSM: received: Alice to Bob19
+17:23:02> PLE_Bob Tx: message: 19
+17:23:02> ALE_Bob Rx: message 20: Alice to Bob19
+17:23:02> PLE_Alice Rx: from ('127.0.0.1', 31111) after 0.28 s: 19
+17:23:02> DLE_Alice Rx: message 26: 19
+17:23:02> DLE_Alice FSM: state: 1 event type: 2
+17:23:02> PLE_Alice Rx: from ('127.0.0.1', 31111) after 1.83 s: 18
+17:23:02> DLE_Alice Rx: message 27: 18
+17:23:02> DLE_Alice FSM: state: 0 event type: 2
+17:23:02> DLE_Alice FSM: error! 8
+17:25:43> ALE_Bob Tx: message 1: Bob to Alice0
+17:25:43> ALE_Bob Tx: message 2: Bob to Alice1
+17:25:43> ALE_Bob Tx: message 3: Bob to Alice2
+17:25:43> ALE_Bob Tx: message 4: Bob to Alice3
+17:25:43> ALE_Bob Tx: message 5: Bob to Alice4
+17:25:43> ALE_Bob Tx: message 6: Bob to Alice5
+17:25:43> ALE_Bob Tx: message 7: Bob to Alice6
+17:25:43> ALE_Bob Tx: message 8: Bob to Alice7
+17:25:43> ALE_Bob Tx: message 9: Bob to Alice8
+17:25:43> ALE_Bob Tx: message 10: Bob to Alice9
+17:25:43> ALE_Bob Tx: message 11: Bob to Alice10
+17:25:43> ALE_Bob Tx: message 12: Bob to Alice11
+17:25:43> ALE_Bob Tx: message 13: Bob to Alice12
+17:25:43> ALE_Bob Tx: message 14: Bob to Alice13
+17:25:43> ALE_Bob Tx: message 15: Bob to Alice14
+17:25:43> ALE_Bob Tx: message 16: Bob to Alice15
+17:25:43> ALE_Bob Tx: message 17: Bob to Alice16
+17:25:43> ALE_Bob Tx: message 18: Bob to Alice17
+17:25:43> ALE_Bob Tx: message 19: Bob to Alice18
+17:25:43> ALE_Bob Tx: message 20: Bob to Alice19
+17:25:43> DLE_Bob Tx: message 1: Bob to Alice0
+17:25:43> DLE_Bob FSM: state: 0 event type: 0
+17:25:43> DLE_Bob FSM: to send: Bob to Alice0
+17:25:43> PLE_Bob Tx: message: 00Bob to Alice0
+17:25:45> PLE_Alice Rx: from ('127.0.0.1', 31111) after 2.72 s: 00Bob to Alice0
+17:25:45> DLE_Alice Rx: message 28: 00Bob to Alice0
+17:25:45> DLE_Alice FSM: state: 0 event type: 1
+17:25:45> DLE_Alice FSM: received: Bob to Alice0
+17:25:45> ALE_Alice Rx: message 1: Bob to Alice0
+17:25:45> PLE_Alice Tx: message: 10
+17:25:45> PLE_Alice Tx: packet loss
+17:25:48> DLE_Bob FSM: state: 1 event type: 3
+17:25:48> DLE_Bob FSM: to resend frame 0 Bob to Alice0
+17:25:48> PLE_Bob Tx: message: 00Bob to Alice0
+17:25:49> PLE_Alice Rx: from ('127.0.0.1', 31111) after 0.84 s: 00Bob to Alice0
+17:25:49> DLE_Alice Rx: message 29: 00Bob to Alice0
+17:25:49> DLE_Alice FSM: state: 0 event type: 1
+17:25:49> DLE_Alice FSM: received: Bob to Alice0
+17:25:49> DLE_Alice FSM: received frame 0 but expected 1
+17:25:49> PLE_Alice Tx: message: 10
+17:25:52> PLE_Bob Rx: from ('127.0.0.1', 30000) after 2.70 s: 10
+17:25:52> DLE_Bob Rx: message 29: 10
+17:25:52> DLE_Bob FSM: state: 1 event type: 2
+17:25:52> DLE_Bob Tx: message 2: Bob to Alice1
+17:25:52> DLE_Bob FSM: state: 0 event type: 0
+17:25:52> DLE_Bob FSM: to send: Bob to Alice1
+17:25:52> PLE_Bob Tx: message: 01Bob to Alice1
+17:25:53> PLE_Alice Rx: from ('127.0.0.1', 31111) after 0.97 s: 01Bob to Alice1
+17:25:53> DLE_Alice Rx: message 30: 01Bob to Alice1
+17:25:53> DLE_Alice FSM: state: 0 event type: 1
+17:25:53> DLE_Alice FSM: received: Bob to Alice1
+17:25:53> ALE_Alice Rx: message 2: Bob to Alice1
+17:25:53> PLE_Alice Tx: message: 11
+17:25:55> PLE_Bob Rx: from ('127.0.0.1', 30000) after 2.49 s: 11
+17:25:55> DLE_Bob Rx: message 30: 11
+17:25:55> DLE_Bob FSM: state: 1 event type: 2
+17:25:55> DLE_Bob Tx: message 3: Bob to Alice2
+17:25:55> DLE_Bob FSM: state: 0 event type: 0
+17:25:55> DLE_Bob FSM: to send: Bob to Alice2
+17:25:55> PLE_Bob Tx: message: 02Bob to Alice2
+17:25:55> PLE_Bob Tx: packet duplicated
+17:25:55> PLE_Alice Rx: from ('127.0.0.1', 31111) after 0.22 s: 02Bob to Alice2
+17:25:55> DLE_Alice Rx: message 31: 02Bob to Alice2
+17:25:55> DLE_Alice FSM: state: 0 event type: 1
+17:25:55> DLE_Alice FSM: received: Bob to Alice2
+17:25:55> ALE_Alice Rx: message 3: Bob to Alice2
+17:25:55> PLE_Alice Tx: message: 12
+17:25:55> PLE_Alice Tx: packet loss
+17:25:57> PLE_Alice Rx: from ('127.0.0.1', 31111) after 1.66 s: 02Bob to Alice2
+17:25:57> DLE_Alice Rx: message 32: 02Bob to Alice2
+17:25:57> DLE_Alice FSM: state: 0 event type: 1
+17:25:57> DLE_Alice FSM: received: Bob to Alice2
+17:25:57> DLE_Alice FSM: received frame 2 but expected 3
+17:25:57> PLE_Alice Tx: message: 12
+17:25:58> PLE_Bob Rx: from ('127.0.0.1', 30000) after 1.64 s: 12
+17:25:58> DLE_Bob Rx: message 31: 12
+17:25:58> DLE_Bob FSM: state: 1 event type: 2
+17:25:58> DLE_Bob Tx: message 4: Bob to Alice3
+17:25:58> DLE_Bob FSM: state: 0 event type: 0
+17:25:58> DLE_Bob FSM: to send: Bob to Alice3
+17:25:58> PLE_Bob Tx: message: 03Bob to Alice3
+17:25:58> PLE_Bob Tx: packet duplicated
+17:25:59> PLE_Alice Rx: from ('127.0.0.1', 31111) after 0.04 s: 03Bob to Alice3
+17:25:59> DLE_Alice Rx: message 33: 03Bob to Alice3
+17:25:59> DLE_Alice FSM: state: 0 event type: 1
+17:25:59> DLE_Alice FSM: received: Bob to Alice3
+17:25:59> PLE_Alice Tx: message: 13
+17:25:59> PLE_Alice Tx: packet loss
+17:25:59> ALE_Alice Rx: message 4: Bob to Alice3
+17:26:01> PLE_Alice Rx: from ('127.0.0.1', 31111) after 2.25 s: 03Bob to Alice3
+17:26:01> DLE_Alice Rx: message 34: 03Bob to Alice3
+17:26:01> DLE_Alice FSM: state: 0 event type: 1
+17:26:01> DLE_Alice FSM: received: Bob to Alice3
+17:26:01> DLE_Alice FSM: received frame 3 but expected 4
+17:26:01> PLE_Alice Tx: message: 13
+17:26:01> PLE_Alice Tx: packet loss
+17:26:04> DLE_Bob FSM: state: 1 event type: 3
+17:26:04> DLE_Bob FSM: to resend frame 3 Bob to Alice3
+17:26:04> PLE_Bob Tx: message: 03Bob to Alice3
+17:26:04> PLE_Bob Tx: packet duplicated
+17:26:05> PLE_Alice Rx: from ('127.0.0.1', 31111) after 0.63 s: 03Bob to Alice3
+17:26:05> DLE_Alice Rx: message 35: 03Bob to Alice3
+17:26:05> DLE_Alice FSM: state: 0 event type: 1
+17:26:05> DLE_Alice FSM: received: Bob to Alice3
+17:26:05> DLE_Alice FSM: received frame 3 but expected 4
+17:26:05> PLE_Alice Tx: message: 13
+17:26:06> PLE_Alice Rx: from ('127.0.0.1', 31111) after 2.33 s: 03Bob to Alice3
+17:26:06> DLE_Alice Rx: message 36: 03Bob to Alice3
+17:26:06> DLE_Alice FSM: state: 0 event type: 1
+17:26:06> DLE_Alice FSM: received: Bob to Alice3
+17:26:06> DLE_Alice FSM: received frame 3 but expected 4
+17:26:06> PLE_Alice Tx: message: 13
+17:26:07> PLE_Bob Rx: from ('127.0.0.1', 30000) after 2.13 s: 13
+17:26:07> DLE_Bob Rx: message 32: 13
+17:26:07> DLE_Bob FSM: state: 1 event type: 2
+17:26:07> DLE_Bob Tx: message 5: Bob to Alice4
+17:26:07> DLE_Bob FSM: state: 0 event type: 0
+17:26:07> DLE_Bob FSM: to send: Bob to Alice4
+17:26:07> PLE_Bob Tx: message: 04Bob to Alice4
+17:26:08> PLE_Bob Rx: from ('127.0.0.1', 30000) after 1.42 s: 13
+17:26:08> DLE_Bob Rx: message 33: 13
+17:26:08> DLE_Bob FSM: state: 1 event type: 2
+17:26:08> ACK # 3 does not match local seq # 4
+17:26:08> PLE_Alice Rx: from ('127.0.0.1', 31111) after 1.48 s: 04Bob to Alice4
+17:26:08> DLE_Alice Rx: message 37: 04Bob to Alice4
+17:26:08> DLE_Alice FSM: state: 0 event type: 1
+17:26:08> DLE_Alice FSM: received: Bob to Alice4
+17:26:08> PLE_Alice Tx: message: 14
+17:26:08> ALE_Alice Rx: message 5: Bob to Alice4
+17:26:09> PLE_Bob Rx: from ('127.0.0.1', 30000) after 0.29 s: 14
+17:26:09> DLE_Bob Rx: message 34: 14
+17:26:09> DLE_Bob FSM: state: 1 event type: 2
+17:26:09> DLE_Bob Tx: message 6: Bob to Alice5
+17:26:09> DLE_Bob FSM: state: 0 event type: 0
+17:26:09> DLE_Bob FSM: to send: Bob to Alice5
+17:26:09> PLE_Bob Tx: message: 05Bob to Alice5
+17:26:11> PLE_Alice Rx: from ('127.0.0.1', 31111) after 2.55 s: 05Bob to Alice5
+17:26:11> DLE_Alice Rx: message 38: 05Bob to Alice5
+17:26:11> DLE_Alice FSM: state: 0 event type: 1
+17:26:11> DLE_Alice FSM: received: Bob to Alice5
+17:26:11> ALE_Alice Rx: message 6: Bob to Alice5
+17:26:11> PLE_Alice Tx: message: 15
+17:26:12> PLE_Bob Rx: from ('127.0.0.1', 30000) after 0.40 s: 15
+17:26:12> DLE_Bob Rx: message 35: 15
+17:26:12> DLE_Bob FSM: state: 1 event type: 2
+17:26:12> DLE_Bob Tx: message 7: Bob to Alice6
+17:26:12> DLE_Bob FSM: state: 0 event type: 0
+17:26:12> DLE_Bob FSM: to send: Bob to Alice6
+17:26:12> PLE_Bob Tx: message: 06Bob to Alice6
+17:26:13> PLE_Alice Rx: from ('127.0.0.1', 31111) after 1.13 s: 06Bob to Alice6
+17:26:13> DLE_Alice Rx: message 39: 06Bob to Alice6
+17:26:13> DLE_Alice FSM: state: 0 event type: 1
+17:26:13> DLE_Alice FSM: received: Bob to Alice6
+17:26:13> PLE_Alice Tx: message: 16
+17:26:13> PLE_Alice Tx: packet loss
+17:26:13> ALE_Alice Rx: message 7: Bob to Alice6
+17:26:18> DLE_Bob FSM: state: 1 event type: 3
+17:26:18> DLE_Bob FSM: to resend frame 6 Bob to Alice6
+17:26:18> PLE_Bob Tx: message: 06Bob to Alice6
+17:26:20> PLE_Alice Rx: from ('127.0.0.1', 31111) after 2.15 s: 06Bob to Alice6
+17:26:20> DLE_Alice Rx: message 40: 06Bob to Alice6
+17:26:20> DLE_Alice FSM: state: 0 event type: 1
+17:26:20> DLE_Alice FSM: received: Bob to Alice6
+17:26:20> DLE_Alice FSM: received frame 6 but expected 7
+17:26:20> PLE_Alice Tx: message: 16
+17:26:21> PLE_Bob Rx: from ('127.0.0.1', 30000) after 0.86 s: 16
+17:26:21> DLE_Bob Rx: message 36: 16
+17:26:21> DLE_Bob FSM: state: 1 event type: 2
+17:26:21> DLE_Bob Tx: message 8: Bob to Alice7
+17:26:21> DLE_Bob FSM: state: 0 event type: 0
+17:26:21> DLE_Bob FSM: to send: Bob to Alice7
+17:26:21> PLE_Bob Tx: message: 07Bob to Alice7
+17:26:22> PLE_Alice Rx: from ('127.0.0.1', 31111) after 0.81 s: 07Bob to Alice7
+17:26:22> DLE_Alice Rx: message 41: 07Bob to Alice7
+17:26:22> DLE_Alice FSM: state: 0 event type: 1
+17:26:22> DLE_Alice FSM: received: Bob to Alice7
+17:26:22> ALE_Alice Rx: message 8: Bob to Alice7
+17:26:22> PLE_Alice Tx: message: 17
+17:26:23> PLE_Bob Rx: from ('127.0.0.1', 30000) after 1.73 s: 17
+17:26:23> DLE_Bob Rx: message 37: 17
+17:26:23> DLE_Bob FSM: state: 1 event type: 2
+17:26:23> DLE_Bob Tx: message 9: Bob to Alice8
+17:26:23> DLE_Bob FSM: state: 0 event type: 0
+17:26:23> DLE_Bob FSM: to send: Bob to Alice8
+17:26:23> PLE_Bob Tx: message: 08Bob to Alice8
+17:26:25> PLE_Alice Rx: from ('127.0.0.1', 31111) after 1.91 s: 08Bob to Alice8
+17:26:25> DLE_Alice Rx: message 42: 08Bob to Alice8
+17:26:25> DLE_Alice FSM: state: 0 event type: 1
+17:26:25> DLE_Alice FSM: received: Bob to Alice8
+17:26:25> ALE_Alice Rx: message 9: Bob to Alice8
+17:26:25> PLE_Alice Tx: message: 18
+17:26:26> PLE_Bob Rx: from ('127.0.0.1', 30000) after 0.30 s: 18
+17:26:26> DLE_Bob Rx: message 38: 18
+17:26:26> DLE_Bob FSM: state: 1 event type: 2
+17:26:26> DLE_Bob Tx: message 10: Bob to Alice9
+17:26:26> DLE_Bob FSM: state: 0 event type: 0
+17:26:26> DLE_Bob FSM: to send: Bob to Alice9
+17:26:26> PLE_Bob Tx: message: 09Bob to Alice9
+17:26:27> PLE_Alice Rx: from ('127.0.0.1', 31111) after 1.76 s: 09Bob to Alice9
+17:26:27> DLE_Alice Rx: message 43: 09Bob to Alice9
+17:26:27> DLE_Alice FSM: state: 0 event type: 1
+17:26:27> DLE_Alice FSM: received: Bob to Alice9
+17:26:27> PLE_Alice Tx: message: 19
+17:26:27> PLE_Alice Tx: packet loss
+17:26:27> ALE_Alice Rx: message 10: Bob to Alice9
+17:26:31> DLE_Bob FSM: state: 1 event type: 3
+17:26:31> DLE_Bob FSM: to resend frame 9 Bob to Alice9
+17:26:31> PLE_Bob Tx: message: 09Bob to Alice9
+17:26:32> PLE_Alice Rx: from ('127.0.0.1', 31111) after 0.36 s: 09Bob to Alice9
+17:26:32> DLE_Alice Rx: message 44: 09Bob to Alice9
+17:26:32> DLE_Alice FSM: state: 0 event type: 1
+17:26:32> DLE_Alice FSM: received: Bob to Alice9
+17:26:32> DLE_Alice FSM: received frame 9 but expected 0
+17:26:32> PLE_Alice Tx: message: 19
+17:26:33> PLE_Bob Rx: from ('127.0.0.1', 30000) after 1.32 s: 19
+17:26:33> DLE_Bob Rx: message 39: 19
+17:26:33> DLE_Bob FSM: state: 1 event type: 2
+17:26:33> DLE_Bob Tx: message 11: Bob to Alice10
+17:26:33> DLE_Bob FSM: state: 0 event type: 0
+17:26:33> DLE_Bob FSM: to send: Bob to Alice10
+17:26:33> PLE_Bob Tx: message: 00Bob to Alice10
+17:26:33> PLE_Bob Tx: packet loss
+17:26:39> DLE_Bob FSM: state: 1 event type: 3
+17:26:39> DLE_Bob FSM: to resend frame 0 Bob to Alice10
+17:26:39> PLE_Bob Tx: message: 00Bob to Alice10
+17:26:39> PLE_Alice Rx: from ('127.0.0.1', 31111) after 0.75 s: 00Bob to Alice10
+17:26:39> DLE_Alice Rx: message 45: 00Bob to Alice10
+17:26:39> DLE_Alice FSM: state: 0 event type: 1
+17:26:39> DLE_Alice FSM: received: Bob to Alice10
+17:26:39> ALE_Alice Rx: message 11: Bob to Alice10
+17:26:39> PLE_Alice Tx: message: 10
+17:26:40> PLE_Bob Rx: from ('127.0.0.1', 30000) after 0.51 s: 10
+17:26:40> DLE_Bob Rx: message 40: 10
+17:26:40> DLE_Bob FSM: state: 1 event type: 2
+17:26:40> DLE_Bob Tx: message 12: Bob to Alice11
+17:26:40> DLE_Bob FSM: state: 0 event type: 0
+17:26:40> DLE_Bob FSM: to send: Bob to Alice11
+17:26:40> PLE_Bob Tx: message: 01Bob to Alice11
+17:26:40> PLE_Bob Tx: packet duplicated
+17:26:41> PLE_Alice Rx: from ('127.0.0.1', 31111) after 1.21 s: 01Bob to Alice11
+17:26:41> DLE_Alice Rx: message 46: 01Bob to Alice11
+17:26:41> DLE_Alice FSM: state: 0 event type: 1
+17:26:41> DLE_Alice FSM: received: Bob to Alice11
+17:26:41> ALE_Alice Rx: message 12: Bob to Alice11
+17:26:41> PLE_Alice Tx: message: 11
+17:26:41> PLE_Alice Tx: packet loss
+17:26:42> PLE_Alice Rx: from ('127.0.0.1', 31111) after 1.68 s: 01Bob to Alice11
+17:26:42> DLE_Alice Rx: message 47: 01Bob to Alice11
+17:26:42> DLE_Alice FSM: state: 0 event type: 1
+17:26:42> DLE_Alice FSM: received: Bob to Alice11
+17:26:42> DLE_Alice FSM: received frame 1 but expected 2
+17:26:42> PLE_Alice Tx: message: 11
+17:26:45> PLE_Bob Rx: from ('127.0.0.1', 30000) after 2.94 s: 11
+17:26:45> DLE_Bob Rx: message 41: 11
+17:26:45> DLE_Bob FSM: state: 1 event type: 2
+17:26:45> DLE_Bob Tx: message 13: Bob to Alice12
+17:26:45> DLE_Bob FSM: state: 0 event type: 0
+17:26:45> DLE_Bob FSM: to send: Bob to Alice12
+17:26:45> PLE_Bob Tx: message: 02Bob to Alice12
+17:26:45> PLE_Bob Tx: packet loss
+17:26:50> DLE_Bob FSM: state: 1 event type: 3
+17:26:50> DLE_Bob FSM: to resend frame 2 Bob to Alice12
+17:26:50> PLE_Bob Tx: message: 02Bob to Alice12
+17:26:50> PLE_Bob Tx: packet loss
+17:26:56> DLE_Bob FSM: state: 1 event type: 3
+17:26:56> DLE_Bob FSM: to resend frame 2 Bob to Alice12
+17:26:56> PLE_Bob Tx: message: 02Bob to Alice12
+17:26:56> PLE_Bob Tx: packet loss
+17:27:01> DLE_Bob FSM: state: 1 event type: 3
+17:27:01> DLE_Bob FSM: to resend frame 2 Bob to Alice12
+17:27:01> PLE_Bob Tx: message: 02Bob to Alice12
+17:27:01> PLE_Bob Tx: packet loss
+17:27:07> DLE_Bob FSM: state: 1 event type: 3
+17:27:07> DLE_Bob FSM: to resend frame 2 Bob to Alice12
+17:27:07> PLE_Bob Tx: message: 02Bob to Alice12
+17:27:08> PLE_Alice Rx: from ('127.0.0.1', 31111) after 1.10 s: 02Bob to Alice12
+17:27:08> DLE_Alice Rx: message 48: 02Bob to Alice12
+17:27:08> DLE_Alice FSM: state: 0 event type: 1
+17:27:08> DLE_Alice FSM: received: Bob to Alice12
+17:27:08> ALE_Alice Rx: message 13: Bob to Alice12
+17:27:08> PLE_Alice Tx: message: 12
+17:27:09> PLE_Bob Rx: from ('127.0.0.1', 30000) after 1.60 s: 12
+17:27:09> DLE_Bob Rx: message 42: 12
+17:27:09> DLE_Bob FSM: state: 1 event type: 2
+17:27:09> DLE_Bob Tx: message 14: Bob to Alice13
+17:27:09> DLE_Bob FSM: state: 0 event type: 0
+17:27:09> DLE_Bob FSM: to send: Bob to Alice13
+17:27:09> PLE_Bob Tx: message: 03Bob to Alice13
+17:27:10> PLE_Alice Rx: from ('127.0.0.1', 31111) after 0.78 s: 03Bob to Alice13
+17:27:10> DLE_Alice Rx: message 49: 03Bob to Alice13
+17:27:10> DLE_Alice FSM: state: 0 event type: 1
+17:27:10> DLE_Alice FSM: received: Bob to Alice13
+17:27:10> ALE_Alice Rx: message 14: Bob to Alice13
+17:27:10> PLE_Alice Tx: message: 13
+17:27:10> PLE_Alice Tx: packet loss
+17:27:15> DLE_Bob FSM: state: 1 event type: 3
+17:27:15> DLE_Bob FSM: to resend frame 3 Bob to Alice13
+17:27:15> PLE_Bob Tx: message: 03Bob to Alice13
+17:27:18> PLE_Alice Rx: from ('127.0.0.1', 31111) after 2.35 s: 03Bob to Alice13
+17:27:18> DLE_Alice Rx: message 50: 03Bob to Alice13
+17:27:18> DLE_Alice FSM: state: 0 event type: 1
+17:27:18> DLE_Alice FSM: received: Bob to Alice13
+17:27:18> DLE_Alice FSM: received frame 3 but expected 4
+17:27:18> PLE_Alice Tx: message: 13
+17:27:18> PLE_Alice Tx: packet loss
+17:27:21> DLE_Bob FSM: state: 1 event type: 3
+17:27:21> DLE_Bob FSM: to resend frame 3 Bob to Alice13
+17:27:21> PLE_Bob Tx: message: 03Bob to Alice13
+17:27:24> PLE_Alice Rx: from ('127.0.0.1', 31111) after 2.85 s: 03Bob to Alice13
+17:27:24> DLE_Alice Rx: message 51: 03Bob to Alice13
+17:27:24> DLE_Alice FSM: state: 0 event type: 1
+17:27:24> DLE_Alice FSM: received: Bob to Alice13
+17:27:24> DLE_Alice FSM: received frame 3 but expected 4
+17:27:24> PLE_Alice Tx: message: 13
+17:27:24> PLE_Alice Tx: packet loss
+17:27:26> DLE_Bob FSM: state: 1 event type: 3
+17:27:26> DLE_Bob FSM: to resend frame 3 Bob to Alice13
+17:27:26> PLE_Bob Tx: message: 03Bob to Alice13
+17:27:29> PLE_Alice Rx: from ('127.0.0.1', 31111) after 2.96 s: 03Bob to Alice13
+17:27:29> DLE_Alice Rx: message 52: 03Bob to Alice13
+17:27:29> DLE_Alice FSM: state: 0 event type: 1
+17:27:29> DLE_Alice FSM: received: Bob to Alice13
+17:27:29> DLE_Alice FSM: received frame 3 but expected 4
+17:27:29> PLE_Alice Tx: message: 13
+17:27:30> PLE_Bob Rx: from ('127.0.0.1', 30000) after 0.50 s: 13
+17:27:30> DLE_Bob Rx: message 43: 13
+17:27:30> DLE_Bob FSM: state: 1 event type: 2
+17:27:30> DLE_Bob Tx: message 15: Bob to Alice14
+17:27:30> DLE_Bob FSM: state: 0 event type: 0
+17:27:30> DLE_Bob FSM: to send: Bob to Alice14
+17:27:30> PLE_Bob Tx: message: 04Bob to Alice14
+17:27:31> PLE_Alice Rx: from ('127.0.0.1', 31111) after 1.75 s: 04Bob to Alice14
+17:27:31> DLE_Alice Rx: message 53: 04Bob to Alice14
+17:27:31> DLE_Alice FSM: state: 0 event type: 1
+17:27:31> DLE_Alice FSM: received: Bob to Alice14
+17:27:31> ALE_Alice Rx: message 15: Bob to Alice14
+17:27:31> PLE_Alice Tx: message: 14
+17:27:34> PLE_Bob Rx: from ('127.0.0.1', 30000) after 2.42 s: 14
+17:27:34> DLE_Bob Rx: message 44: 14
+17:27:34> DLE_Bob FSM: state: 1 event type: 2
+17:27:34> DLE_Bob Tx: message 16: Bob to Alice15
+17:27:34> DLE_Bob FSM: state: 0 event type: 0
+17:27:34> DLE_Bob FSM: to send: Bob to Alice15
+17:27:34> PLE_Bob Tx: message: 05Bob to Alice15
+17:27:34> PLE_Bob Tx: packet loss
+17:27:40> DLE_Bob FSM: state: 1 event type: 3
+17:27:40> DLE_Bob FSM: to resend frame 5 Bob to Alice15
+17:27:40> PLE_Bob Tx: message: 05Bob to Alice15
+17:27:40> PLE_Bob Tx: packet loss
+17:27:45> DLE_Bob FSM: state: 1 event type: 3
+17:27:45> DLE_Bob FSM: to resend frame 5 Bob to Alice15
+17:27:45> PLE_Bob Tx: message: 05Bob to Alice15
+17:27:47> PLE_Alice Rx: from ('127.0.0.1', 31111) after 1.58 s: 05Bob to Alice15
+17:27:47> DLE_Alice Rx: message 54: 05Bob to Alice15
+17:27:47> DLE_Alice FSM: state: 0 event type: 1
+17:27:47> DLE_Alice FSM: received: Bob to Alice15
+17:27:47> ALE_Alice Rx: message 16: Bob to Alice15
+17:27:47> PLE_Alice Tx: message: 15
+17:27:48> PLE_Bob Rx: from ('127.0.0.1', 30000) after 1.16 s: 15
+17:27:48> DLE_Bob Rx: message 45: 15
+17:27:48> DLE_Bob FSM: state: 1 event type: 2
+17:27:48> DLE_Bob Tx: message 17: Bob to Alice16
+17:27:48> DLE_Bob FSM: state: 0 event type: 0
+17:27:48> DLE_Bob FSM: to send: Bob to Alice16
+17:27:48> PLE_Bob Tx: message: 06Bob to Alice16
+17:27:48> PLE_Bob Tx: packet loss
+17:27:54> DLE_Bob FSM: state: 1 event type: 3
+17:27:54> DLE_Bob FSM: to resend frame 6 Bob to Alice16
+17:27:54> PLE_Bob Tx: message: 06Bob to Alice16
+17:27:55> PLE_Alice Rx: from ('127.0.0.1', 31111) after 1.11 s: 06Bob to Alice16
+17:27:55> DLE_Alice Rx: message 55: 06Bob to Alice16
+17:27:55> DLE_Alice FSM: state: 0 event type: 1
+17:27:55> DLE_Alice FSM: received: Bob to Alice16
+17:27:55> ALE_Alice Rx: message 17: Bob to Alice16
+17:27:55> PLE_Alice Tx: message: 16
+17:27:57> PLE_Bob Rx: from ('127.0.0.1', 30000) after 2.57 s: 16
+17:27:57> DLE_Bob Rx: message 46: 16
+17:27:57> DLE_Bob FSM: state: 1 event type: 2
+17:27:57> DLE_Bob Tx: message 18: Bob to Alice17
+17:27:57> DLE_Bob FSM: state: 0 event type: 0
+17:27:57> DLE_Bob FSM: to send: Bob to Alice17
+17:27:57> PLE_Bob Tx: message: 07Bob to Alice17
+17:28:00> PLE_Alice Rx: from ('127.0.0.1', 31111) after 2.41 s: 07Bob to Alice17
+17:28:00> DLE_Alice Rx: message 56: 07Bob to Alice17
+17:28:00> DLE_Alice FSM: state: 0 event type: 1
+17:28:00> DLE_Alice FSM: received: Bob to Alice17
+17:28:00> PLE_Alice Tx: message: 17
+17:28:00> ALE_Alice Rx: message 18: Bob to Alice17
+17:28:02> PLE_Bob Rx: from ('127.0.0.1', 30000) after 1.59 s: 17
+17:28:02> DLE_Bob Rx: message 47: 17
+17:28:02> DLE_Bob FSM: state: 1 event type: 2
+17:28:02> DLE_Bob Tx: message 19: Bob to Alice18
+17:28:02> DLE_Bob FSM: state: 0 event type: 0
+17:28:02> DLE_Bob FSM: to send: Bob to Alice18
+17:28:02> PLE_Bob Tx: message: 08Bob to Alice18
+17:28:03> PLE_Alice Rx: from ('127.0.0.1', 31111) after 1.69 s: 08Bob to Alice18
+17:28:03> DLE_Alice Rx: message 57: 08Bob to Alice18
+17:28:03> DLE_Alice FSM: state: 0 event type: 1
+17:28:03> DLE_Alice FSM: received: Bob to Alice18
+17:28:03> ALE_Alice Rx: message 19: Bob to Alice18
+17:28:03> PLE_Alice Tx: message: 18
+17:28:03> PLE_Alice Tx: packet duplicated
+17:28:05> PLE_Bob Rx: from ('127.0.0.1', 30000) after 1.36 s: 18
+17:28:05> DLE_Bob Rx: message 48: 18
+17:28:05> DLE_Bob FSM: state: 1 event type: 2
+17:28:05> DLE_Bob Tx: message 20: Bob to Alice19
+17:28:05> DLE_Bob FSM: state: 0 event type: 0
+17:28:05> DLE_Bob FSM: to send: Bob to Alice19
+17:28:05> PLE_Bob Tx: message: 09Bob to Alice19
+17:28:05> PLE_Alice Rx: from ('127.0.0.1', 31111) after 0.57 s: 09Bob to Alice19
+17:28:05> DLE_Alice Rx: message 58: 09Bob to Alice19
+17:28:05> DLE_Alice FSM: state: 0 event type: 1
+17:28:05> DLE_Alice FSM: received: Bob to Alice19
+17:28:05> ALE_Alice Rx: message 20: Bob to Alice19
+17:28:05> PLE_Alice Tx: message: 19
+17:28:06> PLE_Bob Rx: from ('127.0.0.1', 30000) after 2.36 s: 18
+17:28:06> DLE_Bob Rx: message 49: 18
+17:28:06> DLE_Bob FSM: state: 1 event type: 2
+17:28:06> ACK # 8 does not match local seq # 9
+17:28:06> PLE_Bob Rx: from ('127.0.0.1', 30000) after 1.14 s: 19
+17:28:06> DLE_Bob Rx: message 50: 19
+17:28:06> DLE_Bob FSM: state: 1 event type: 2
